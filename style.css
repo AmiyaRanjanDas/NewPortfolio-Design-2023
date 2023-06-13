@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s linear;
+}
+
+/* ======================================================================== */
+/* ================================HOME==================================== */
+/* ======================================================================== */
+#Sec1 {
+    position: relative;
+    height: 320vh;
+    background: red;
+}
+
+#home {
+    background: black;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#text1,
+#text2,
+#text4,
+#text5,
+#text6 {
+    font-size: 5.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 22%;
+    left: 19%;
+}
+
+#text2 {
+    top: 65%;
+    left: 66%;
+}
+
+#text3 {
+    position: absolute;
+    top: 49%;
+    left: 48%;
+    font-size: 1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    opacity: 0;
+    letter-spacing: 4px;
+}
+
+#temp {
+    position: absolute;
+    width: 16%;
+    height: 20vh;
+    top: 40%;
+    left: 45%;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+#temp1,
+#temp2,
+#temp3,
+#temp4,
+#temp5 {
+    position: absolute;
+    width: 18vw;
+    height: 19vh;
+    top: 22%;
+    left: 0%;
+    background: rgb(0, 0, 0);
+}
+
+#temp2 {
+    top: 62%;
+    left: 82%;
+}
+
+#temp3 {
+    top: 40%;
+    left: 17%;
+    z-index: 2;
+    /* background: red; */
+}
+
+#temp4 {
+    top: 40%;
+    left: 66.5%;
+    z-index: 2;
+    /* background: red; */
+}
+
+#text4 {
+    top: 45%;
+    left: 19%;
+}
+
+#text5 {
+    top: 45%;
+    left: 67%;
+}
+
+#temp5 {
+    top: 40%;
+    width: 67vh;
+    left: 34%;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+/* ======================================================================== */
+/* ===============================About==================================== */
+/* ======================================================================== */
+#Sec2 {
+    position: relative;
+    height: 320vh;
+    background: rgb(0, 0, 0);
+}
+
+#about {
+    background: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+}
+
+#pic1,
+#pic2 {
+    position: absolute;
+    top: 18vh;
+    left: 20vh;
+    width: 40vh;
+}
+
+#pic2 {
+    top: 41.5vh;
+    left: 145.5vh;
+}
+
+#about-div {
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    z-index: 3;
+    background: black;
+    text-align: justify;
+}
+
+#about-div h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 6px;
+    font-weight: 300;
+    line-height: 42px;
+}
+
+/* ======================================================================== */
+/* ==============================Skills==================================== */
+/* ======================================================================== */
+#Sec3 {
+    position: relative;
+    height: 750vh;
+    background: rgb(0, 0, 0);
+}
+
+#skills {
+    background: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skillText1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 10px;
+}
+
+#skillText2,
+#skillText3,
+#skillText4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62px;
+    position: absolute;
+    right: -3000%;
+    background-color: black;
+    white-space: nowrap;
+    font-weight: 500;
+    top: 46%;
+}
+
+#skillText3 {
+    top: 54vh;
+    left: -230vh;
+}
+
+#skillText4 {
+    top: 38vh;
+    left: -230vh;
+}
+
+#skilldiv {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    height: 200vh;
+    width: 100%;
+    color: white;
+}
+
+#ProTag {
+    /* background: white; */
+    /* color: black; */
+    height: 32vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#ProTag h1 {
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+/* ======================================================================== */
+/* =============================Project==================================== */
+/* ======================================================================== */
+#Sec4 {
+    position: relative;
+    height: 2700vh;
+    background: rgb(0, 0, 0);
+}
+
+#project {
+    background: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#proPic1,
+#proPic2,
+#proPic3,
+#proPic4 {
+    position: absolute;
+    width: 15.0455%;
+    z-index: 5;
+}
+
+#proPic2,
+#proPic3,
+#proPic4 {
+    width: 10.0455%;
+}
+
+#proPic2 {
+    z-index: 4;
+}
+
+#proPic3 {
+    z-index: 3;
+}
+
+#proPic4 {
+    z-index: 2;
+}
+
+#proPic5 {
+    z-index: 1;
+}
+
+/* ======================================================================== */
+/* =============================Project==================================== */
+/* ======================================================================== */
+#Contact {
+    display: flex;
+    height: 100vh;
+}
+
+#AllContact {
+    background: rgb(0, 0, 0);
+    width: 60%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AllConContainer {
+    width: 70%;
+    padding-right: 10vw;
+    /* position: relative; */
+}
+
+#ConSta {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background: rgb(0, 0, 0);
+}
+
+#StaContainer {
+    background: rgb(0, 0, 0);
+    height: 70%;
+    width: 75%;
+    line-height: 0.85;
+}
+
+#StaContainer h1,
+#StaContainer h2,
+#StaContainer h3,
+#StaContainer h6,
+#StaContainer p {
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vw;
+    overflow: hidden;
+}
+
+#StaContainer h2 {
+    font-size: 4vw;
+    direction: rtl;
+    overflow: hidden;
+}
+
+#StaContainer p {
+    font-size: 8vw;
+    direction: rtl;
+    overflow: hidden;
+}
+
+#StaContainer h3 {
+    font-size: 2vw;
+    overflow: hidden;
+}
+
+#StaContainer h6 {
+    font-size: 7vw;
+    direction: rtl;
+    overflow: hidden;
+    font-weight: 900;
+}
+
+
+
+
+.Allcon {
+    padding: 2vw 2vw;
+    font-size: 2.5vw;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+.Allcon:hover {
+    /* position: relative; */
+    background-color: rgb(14, 14, 14);
+    z-index: 2;
+}
+.effect {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) scale(.2);
+    opacity: 0 ;
+    width: 200px;
+}
+
+.Allcon:hover ~ .effect {
+    transform: translate(-50%, 9%) scale(1);
+    opacity: 1;
+}
+
+/* ======================================================================== */
+/* =============================Responsive================================= */
+/* ======================================================================== */
+
+@media screen and (max-width: 620px) {
+    #text3 {
+        top: 46.3%;
+    }
+
+    #about-div h2 {
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        line-height: 29px;
+    }
+
+    #pic1,
+    #pic2 {
+        top: 20vh;
+        left: 2vh;
+        width: 22vh;
+    }
+
+    #pic2 {
+        top: 58vh;
+        left: 22vh;
+    }
+
+    #skilldiv {
+        margin-top: 60vh;
+    }
+}

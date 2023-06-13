@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-Fest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- ========================================================================================
+    ================================  Home Section  =============================================
+    ========================================================================================= -->
+    <section id="Sec1">
+        <div id="home">
+            <h1 id="text1">DEEP</h1>
+            <h1 id="text2">LOVE</h1>
+            <h1 id="text3">WITH</h1>
+            <div id="temp"></div>
+            <div id="temp1"></div>
+            <div id="temp2"></div>
+            <div id="temp3"></div>
+            <div id="temp4"></div>
+            <h1 id="text4">DEVE</h1>
+            <h1 id="text5">LOPE</h1>
+            <div id="temp5"></div>
+        </div>
+    </section>
+    <!-- =============================Sec1 Script start======================================= -->
+    <script>
+        let text1 = document.querySelector('#text1');
+        let text2 = document.querySelector('#text2');
+        let text3 = document.querySelector('#text3');
+        let div1 = document.querySelector('#temp');
+        let text4 = document.querySelector('#text4');
+        let text5 = document.querySelector('#text5');
+        let div5 = document.querySelector('#temp5');
+
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            text3.style.opacity = value / 2 + '%';    //1st Animation
+            this.scrollY > 450 ? div1.style.opacity = value / 7 + '%' : div1.style.opacity = 0;   //2nd Animation
+            this.scrollY > 450 ? text1.style.left = 20 - (value - 400) / 42 + '%' : text1.style.left = 19 + '%';   //3rd Animation
+            this.scrollY > 450 ? text2.style.left = 65.5 + (value - 400) / 42 + '%' : text2.style.left = 66 + '%';    //4th Animation
+            if (this.scrollY < 1179) {
+                this.scrollY > 430 ? text4.style.left = 17 + (value - 400) / 42 + '%' : text5.style.left = 67 + '%';    //4th Animation
+                this.scrollY > 430 ? text5.style.left = 69 - (value - 400) / 42 + '%' : text5.style.left = 67 + '%';    //5th Animation
+            }
+            this.scrollY > 1500 ? temp5.style.opacity = value / 23 + '%' : temp5.style.opacity = -(value / 23) + '%';   //6th Animation
+        }, false);
+    </script>
+
+    <!-- ========================================================================================
+    ================================  About Section  ============================================
+    ========================================================================================= -->
+    <section id="Sec2">
+        <div id="about">
+            <img src="images/giphy10.gif" id="pic1">
+            <img src="images/giphy10.gif" id="pic2">
+            <div id="about-div">
+                <h2>
+                    suscipit libero impedit fuga debitis. Ducimus minima non impedit perferendis, ut aliquam cum fugit
+                    explicabo vel, dolorem eaque necessitatibus dicta architecto corporis dignissimos! Provident,
+                    expedita recusandae exercitationem consequuntur a dicta, aperiam mollitia nihil quam illum, ratione
+                    eligendi. Quae, suscipit impedit quam molestias nulla consequatur, officiis provident ipsum error
+                    placeat voluptates. Eius, eaque voluptatibus error ea similique cum est a nisi!</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================================
+    ================================  Skill Section  ============================================
+    ========================================================================================= -->
+    <section id="Sec3">
+        <div id="skills">
+            <h2 id="skillText1">SKILLS</h2>
+            <h2 id="skillText2">JAVA CSS C++ JAVASCRIPT GITHUB HTML REACT EXPRESS NODE HTML REACT EXPRESS NODE MONGODB
+                AI SQL PHP DATABASE</h2>
+            <h2 id="skillText3">HTML REACT EXPRESS NODE JAVA CSS C++ JAVASCRIPT GITHUB JAVA CSS C++ JAVASCRIPT GITHUB
+                HTML REACT EXPRESS NODE HTML</h2>
+            <h2 id="skillText4">JAVA CSS C++ JAVASCRIPT GITHUB HTML REACT EXPRESS NODE HTML REACT GITHUB EXPRESS NODE
+                JAVA CSS C++ JAVASCRIPT GITHUB </h2>
+            <div id="skilldiv"> 
+                <div id="ProTag">
+                    <h1>PROJECTS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================Sec3 Script start======================================= -->
+    <script>
+        let sktext2 = document.querySelector('#skillText2');
+        let sktext3 = document.querySelector('#skillText3');
+        let sktext4 = document.querySelector('#skillText4');
+        let skdiv = document.querySelector('#skilldiv');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            sktext2.style.left = 350 - value / 24 + '%';   //1st Animation
+            sktext3.style.left = -477 + value / 24 + '%';   //2nd Animation
+            sktext4.style.left = -482 + value / 24 + '%';    //3rd Animation
+            this.scrollY > 7500 ? skdiv.style.top = 450 - value / 25 + '%' : skdiv.style.top = 600 + value / 15 + '%';
+        }, false);
+    </script>
+
+    <!-- ========================================================================================
+    ================================  Project Section  ==========================================
+    ========================================================================================= -->
+    <section id="Sec4">
+        <div id="project">
+            <img src="images/giphy10.gif" id="proPic1">
+            <img src="images/giphy10.gif" id="proPic2">
+            <img src="images/giphy10.gif" id="proPic3">
+            <img src="images/giphy10.gif" id="proPic4">
+        </div>
+    </section>
+    <!-- =============================Sec4 Script start======================================= -->
+    <script>
+        let proP1 = document.querySelector('#proPic1');
+        let proP2 = document.querySelector('#proPic2');
+        let proP3 = document.querySelector('#proPic3');
+        let proP4 = document.querySelector ('#proPic4');
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            value>12500 ? proP1.style.width = -67 + value /150 + '%' : " " ;
+            value>12725 ? proP1.style.opacity = 1550 - value / 10 + '%' : " " ;
+            
+            value>16500 ? proP2.style.width = -97 + value /150 + '%' : " " ;
+            value>12725 ? proP2.style.opacity = 2000 - value / 10 + '%' : " " ;
+
+            value>21500 ? proP3.style.width = -132 + value /150 + '%' : " "  ;
+            value>12725 ? proP3.style.opacity = 2530 - value / 10 + '%' : " " ;
+            
+            value>27500 ? proP4.style.width = -172 + value /150 + '%' : " " ;
+            value>12725 ? proP4.style.opacity = 3130 - value / 10 + '%' : " " ;
+            
+        });   
+    </script>
+    <!-- ========================================================================================
+    ================================  Project Section  ==========================================
+    ========================================================================================= -->
+
+<section id="Sec5">
+    <div id="Contact">
+        <div id="AllContact">
+            <div class="AllConContainer">
+                <div class="Allcon" data-src="images/email.gif" style="border-top: 2px solid;">
+                    EMAIL
+                </div>
+                <div class="Allcon" data-src="images/STICKER1234.gif">
+                    LINKEDIN
+                </div>
+                <div class="Allcon" data-src="images/insta.gif">
+                    INSTAGRAM
+                </div>
+                <div class="Allcon" data-src="images/github.gif">
+                    GITHUB
+                </div>
+                <div class="Allcon" data-src="images/website.gif">
+                    WEBSITE
+                </div>
+                <img src="images/PROJECT.png" class="effect">
+            </div>
+        </div>
+        <div id="ConSta">
+            <div id="StaContainer">
+                <h1>CONTACT</h1>
+                <h2>CONTACTCONTACT</h2>
+                <p >CONTACTCO</p>
+                <h3 id="ModP">CONTACTCONTACTCONTACTCONTACTCONTACTCONTACT</h3>
+                <h6>CONTACT</h6>
+                <div style="display: flex;">
+                    <div style="width: 55%;overflow: hidden;position: relative;">
+                        <h3 style="font-size: 1.5vw;">CONTACT</h3>
+                        <p >CONTA</p>
+                    </div>                 
+                    <h1>CONTACT</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let A= document.querySelector('.AllConContainer');
+    let B= A.querySelector('.effect');
+    document.body.onmousemove = (e) =>{
+       let x = e.pageX;
+       let y = e.pageY;
+       B.style.top = y + 'px';
+       B.style.left = x + 'px';
+    }
+    A.querySelectorAll('.Allcon').forEach(text =>{
+        text.onmousemove = () =>{
+            B.src = text.getAttribute('data-src');
+            console.log(B.src);
+        }
+    });
+</script>
+</body>
+ 
+</html>
